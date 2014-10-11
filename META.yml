@@ -20,7 +20,7 @@ name: Games-NES-SpriteMaker
 provides:
   Games::NES::SpriteMaker:
     file: lib/Games/NES/SpriteMaker.pm
-    version: '0.01'
+    version: '0.02'
 requires:
   Exporter: '0'
   Image::PNM: '0'
@@ -30,7 +30,7 @@ resources:
   bugtracker: https://github.com/doy/games-nes-spritemaker/issues
   homepage: http://metacpan.org/release/Games-NES-SpriteMaker
   repository: git://github.com/doy/games-nes-spritemaker.git
-version: '0.01'
+version: '0.02'
 x_Dist_Zilla:
   perl:
     version: '5.020000'
@@ -202,7 +202,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: '0.01'
+          tag: '0.02'
           tag_format: '%v'
           tag_message: ''
           time_zone: local

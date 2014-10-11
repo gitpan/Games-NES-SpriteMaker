@@ -2,7 +2,7 @@ package Games::NES::SpriteMaker;
 BEGIN {
   $Games::NES::SpriteMaker::AUTHORITY = 'cpan:DOY';
 }
-$Games::NES::SpriteMaker::VERSION = '0.01';
+$Games::NES::SpriteMaker::VERSION = '0.02';
 use strict;
 use warnings;
 # ABSTRACT: manipulate PNM files and generate NES sprite data from them
@@ -59,7 +59,8 @@ sub image_to_sprite {
 sub _get_palette_colors {
     my ($image) = @_;
 
-    my %unique_values = ("1;1;1" => 0);
+    my $max = $image->max_pixel_value;
+    my %unique_values = ("$max;$max;$max" => 0);
     my $idx = 1;
     for my $row (0..$image->height - 1) {
         for my $col (0..$image->width - 1) {
@@ -96,7 +97,7 @@ Games::NES::SpriteMaker - manipulate PNM files and generate NES sprite data from
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

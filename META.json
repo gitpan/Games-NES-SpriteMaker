@@ -49,7 +49,7 @@
    "provides" : {
       "Games::NES::SpriteMaker" : {
          "file" : "lib/Games/NES/SpriteMaker.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -64,7 +64,7 @@
          "web" : "https://github.com/doy/games-nes-spritemaker"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.020000"
@@ -288,7 +288,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "0.01",
+                  "tag" : "0.02",
                   "tag_format" : "%v",
                   "tag_message" : "",
                   "time_zone" : "local"
